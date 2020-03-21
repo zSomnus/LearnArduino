@@ -11,4 +11,18 @@ void setup(){
 }
 void loop(){
 
+    pushButton1 = digitalRead(2);
+    pushButton2 = digitalRead(8);
+
+    if(!pushButton1 && brightness < 255){
+        // Brightness up
+        brightness++;
+    }else if(!pushButton2 && brightness > 0)
+    {
+        // Brightness down
+        brightness--;
+    }
+    analogWrite(ledPin, brightness);
+    Serial.println(brightness);
+    delay(10);
 }
