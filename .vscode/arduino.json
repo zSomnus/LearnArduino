@@ -1,5 +1,0 @@
-{
-    "board": "arduino:avr:uno",
-    "sketch": "pot_Led\\\\pot_Led.ino",
-    "port": "COM4"
-}

@@ -24,6 +24,12 @@
                     "C:\\Program Files (x86)\\Arduino\\tools\\**",
                     "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
                     "C:\\Users\\Ella Zhang\\Documents\\Arduino\\libraries",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
+                    "C:\\Program Files (x86)\\Arduino\\tools\\**",
+                    "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\**",
+                    "C:\\Program Files (x86)\\Arduino\\libraries\\**",
+                    "C:\\Users\\Ella Zhang\\Documents\\Arduino\\hardware\\tools\\**",
+                    "C:\\Users\\Ella Zhang\\Documents\\Arduino\\libraries\\**",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
