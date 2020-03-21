@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "pot_analogRead\\\\pot_analogRead.ino",
+    "port": "COM4"
+}
