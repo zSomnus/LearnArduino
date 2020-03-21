@@ -1,29 +1,25 @@
 #include <Servo.h>
 
-Servo myservo;
-
-bool push0;
-bool push180;
+Servo myServo;
+int dataIndex = 0;
 
 void setup() {
-  myservo.attach(9);
-  pinMode(2, INPUT_PULLUP);
-  pinMode(4, INPUT_PULLUP);
-  myservo.write(0);
+  myServo.attach(9);
+  Serial.begin(9600);
+  Serial.println("Please input serial data. ");
 }
 
 void loop() {
-  push0 = !digitalRead(4);
-  push180 = !digitalRead(2);
-  if(push180 && myservo.read() == 0){
-    for(int i = 0; i <= 180; i++){
-      myservo.write(i);
-      delay(10);
-    }
-  }else if(push0 && myservo.read() == 180){
-    for(int i = 180; i >= 0; i--){
-      myservo.write(i);
-      delay(10);
-    }
+  if(Serial.available() > 0){
+    dataIndex++;
+    Serial.print("dataIndex = ");
+    Serial.print(dataIndex);
+    Serial.print(" , ");
+
+    int pos = Serial.parseInt();
+    Serial.print("Set servo position: ");
+    Serial.println(pos);
+    myServo.write(pos);
+    delay(15);
   }
 }
