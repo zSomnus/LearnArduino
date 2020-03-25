@@ -1,0 +1,8 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoSurround": "quotes",
+    "editor.mouseWheelZoom": true
+}
